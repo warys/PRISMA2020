@@ -1,0 +1,35 @@
+Package: PRISMA2020mod
+Title: Make Interactive 'PRISMA' Flow Diagrams (Modified)
+Version: 1.1.4.9000
+Authors@R: c(
+    person(given = "Neal",
+           family = "Haddaway",
+           role = "aut",
+           email = "nealhaddaway@gmail.com",
+           comment = c(ORCID = "0000-0003-3902-2234")),
+    person("Luke", "McGuinness", role = "aut",
+           email = "luke.mcguinness@bristol.ac.uk",
+           comment = c(ORCID = "0000-0001-8730-9761")),
+    person("Chris", "Pritchard", role = c("aut", "cre"),
+            email = "chris@christopherpritchard.co.uk",
+            comment = c(ORCID = "0000-0002-1143-9751")),
+    person("Brennan", "Chapman", role = "ctb"),
+    person("Hossam", "Hammady", role = "ctb"),
+    person("Anders", "Kolstad", role = "ctb", comment = c(ORCID = "0000-0002-9623-9491")),
+    person("Shreya", "Dimri", role = "ctb", comment = c(ORCID = "0009-0009-2155-7506")),
+    person("Matt Lloyd", "Jones", role = "ctb", comment = c(ORCID = "0000-0001-5841-4554")),
+    person("John-o", "Kulas", role = "ctb"))
+Description: A modified version of PRISMA2020 v1.1.4 with fixes for:
+    hardcoded label suppression (no forced "Records identified from:" or
+    "(n = 0)" when data is empty), detail data proper formatting, and
+    dummy default removal. Original by Haddaway et al. (2022).
+Imports: cpp11, DiagrammeR, DiagrammeRsvg, dplyr, htmltools,
+        htmlwidgets, progress, rmarkdown, rsvg, scales, shiny, shinyjs,
+        stats, stringr, utils, xml2, webp, DT, rio, tools, zip
+License: MIT + file LICENSE
+URL: https://github.com/prisma-flowdiagram/PRISMA2020
+BugReports: https://github.com/prisma-flowdiagram/PRISMA2020/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
